@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Establecimiento</title>
+    <link rel="stylesheet" href="css/BusquedaDeReservaReseña.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="info-box">
+        <div class="header">
+            <div class="image-placeholder"> <div class="photo-placeholder"><img src="img/foto1.png" alt="foto1" class="foto2"></div></div>
+            <div>
+                <h2>Estacionamiento de la playa agua dulce</h2>
+                <p>Reseñas</p>
+            </div>
+        </div>
+
+        <div class="description">
+            <h3>Descripción</h3>
+            <label for="first-name">
+                <textarea placeholder="Escribe tu reseña aqui" class="Resenia" required> </textarea>
+            </label>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="btn">
+                </div>
+            </form>
+
+            <div class="buttons">
+                <a href="ReservaOpinionEnviada.html"><button class="opinion-button" >Deja una opinión</button></a>
+                <a href="RegisterReserva.html"><button class="reserve-button">Reservar</button></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="map-container" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15601.613583549472!2d-77.04137075494285!3d-12.152916201453062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7ce6a1e9c11%3A0x15b8c4694efc891a!2sEstacionamiento%20de%20la%20playa%20agua%20dulce!5e0!3m2!1ses-419!2spe!4v1725166844512!5m2!1ses-419!2spe" width="810" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+</div>
+
+<p class="footer-text">© 2024 PARKINGNOW. Todos los derechos reservados.</p>
+
+<script>
+    const textarea = document.querySelector("textarea");
+
+    textarea.addEventListener("keyup", (e) => {
+        textarea.style.height = "auto";
+
+        let scHeight = e.target.scrollHeight;
+        textarea.style.height = `${scHeight}px`;
+
+    });
+</script>
+
+
+</body>
+</html>

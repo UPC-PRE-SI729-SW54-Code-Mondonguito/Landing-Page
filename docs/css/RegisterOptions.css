@@ -91,10 +91,10 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.9);
-    display: flex; /* Agregado para alinear los hijos en fila */
-    justify-content: space-between; /* Espacio entre las opciones */
-    width: 100%; /* Aseguramos que el contenedor ocupe todo el ancho disponible */
-    max-width: 100%; /* Para asegurarnos de que no se desborde */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
 }
 
 .register-form h1 {
