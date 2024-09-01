@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration</title>
+    <link rel="stylesheet" href="css/RegisterReserva.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="register-box">
+
+        <div class="register-form">
+            <h1 class="Register">Asegure su espacio con PARKINGNOW</h1>
+
+            <form>
+                <div class="input-group">
+                    <label for="nombre" class="Register">A nombre de...</label>
+                    <input type="text" id="nombre" class="Register" placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="input-group">
+                    <label for="numero-espacios" class="Register">Número de espacios</label>
+                    <input type="number" id="numero-espacios" class="Register" placeholder="Ingrese el número de espacios">
+                </div>
+
+                <div class="input-group">
+                    <label for="metodo-pago" class="Register">Método de pago</label>
+                    <select id="metodo-pago" class="Register">
+                        <option value="tarjeta">Tarjeta de crédito/débito</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="register-button">Reserve ya!</button>
+            </form>
+        </div>
+
+        <div class="register-image">
+            <img src="img/Conductor.jpg" alt="Imagen de Registro de Conductor" class="loginImagen">
+        </div>
+    </div>
+</div>
+
+<p class="footer-text">© 2024 PARKINGNOW. Todos los derechos reservados.</p>
+</body>
+</html>

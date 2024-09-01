@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    width: 30%;
+    background-color: #2d333f;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.description, .photos {
+    margin-bottom: 20px;
+}
+
+.description textarea {
+    width: 95%;
+    height: 80px;
+    background-color: #ddd;
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 8px;
+    resize: none;
+    color: black;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.photo-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opinion-button, .reserve-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.map-container {
+    width: 70%;
+    height: 500px;
+    border-radius: 0 8px 8px 0;
+    background-color: #e5e5e5;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}

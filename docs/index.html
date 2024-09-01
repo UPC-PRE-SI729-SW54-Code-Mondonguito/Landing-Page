@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKINGNOW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="vendor/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet">
+</head>
+
+<body>
+
+<section class="Banner" @click.outside="mobileMenuOpen=false">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="">
+                <img src="img/parkingnow.png" alt="PARKINGNOW" class="ParkingNow_Logo">
+            </a>
+
+        </div>
+
+        <div class="menu">
+            <a href="home" class="hover">
+                Inicio
+            </a>
+            <a href="features" class="hover">
+                Características
+            </a>
+            <a href="reserve" class="hover">
+                Reservar Espacio
+            </a>
+        </div>
+
+        <div class="auth-buttons">
+            <button class="login-button">
+                <a href="login">iniciar sesion</a>
+            </button>
+            <button class="register-button">
+                <a href="register">
+                    Regístrate
+                </a>
+            </button>
+        </div>
+
+
+
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="menu-content">
+            <div class="grid">
+                <a href="home" class="hover">
+                    Inicio
+                </a>
+                <a href="features" class="hover">
+                    Características
+                </a>
+                <a href="reserve" class="hover">
+                    Reservar Espacio
+                </a>
+                <div class="auth-buttons-mobile">
+                    <button class="login-button-mobile">
+                        <a href="login">
+                            Iniciar Sesión
+                        </a>
+                    </button>
+                    <button class="register-button-mobile">
+                        <a href="register">
+                            Regístrate
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="banner-section">
+    <img src="img/Banner_1.jpg" class="object-contain" alt="banner">
+    <div class="banner-text flex">
+        <p class="relative">
+            TU ESPACIO DE <br><span class="text-primary">ESTACIONAMIENTO</span>
+        </p>
+    </div>
+</section>
+
+<section class="locations-section">
+    <h1 class="font-extrabold">
+        Ciudades donde puedes encontrar PARKINGNOW
+    </h1>
+
+    <div class="locations-grid">
+        <div>
+            <img src="img/Lima.png" alt="Lima" class="location-image">
+            <p class="location-text">
+                Lima
+            </p>
+            <p class="location-description text-center text-lg mt-1">
+                La vibrante capital de Perú, conocida por su rica historia, arquitectura colonial y vibrante vida nocturna.
+            </p>
+        </div>
+        <div>
+            <img src="img/Arequipa.jpg" alt="Arequipa" class="location-image">
+            <p class="location-text">
+                Arequipa
+            </p>
+            <p class="location-description  ">
+                Famosa por sus edificaciones de sillar blanco y la majestuosidad del volcán Misti que la rodea.
+            </p>
+        </div>
+        <div>
+            <img src="img/Cuzco.jpg" alt="Cusco" class="location-image">
+            <p class="location-text">
+                Cusco
+            </p>
+            <p class="location-description text-center text-lg mt-1">
+                La antigua capital del Imperio Inca, famosa por su historia, ruinas arqueológicas y su cercanía a Machu Picchu.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="bannerInfo">
+
+
+</section>
+
+<section class="cta-section">
+    <img src="img/Estacionamientos.jpg" alt="cta-banner" class="cta-banner">
+    <div class="cta-content">
+        <p class="cta-title">
+            ¿BUSCAS UN ESTACIONAMIENTO?<br>TE AYUDAMOS A ENCONTRARLO
+        </p>
+        <p class="cta-subtitle">
+            Con PARKINGNOW puedes encontrar y reservar tu espacio en segundos.
+        </p>
+        <button class="cta-button">
+            <a href="reserve">
+                Comienza Ahora
+            </a>
+        </button>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="img/parkingnow.png" alt="PARKINGNOW" class="h-10">
+        </div>
+        <div class="footer-menu">
+            <a href="about" class="hover">Acerca de</a>
+            <a href="features" class="hover">Características</a>
+            <a href="contact" class="hover">Contacto</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PARKINGNOW. Todos los derechos reservados.
+    </div>
+</footer>
+
+</body>
+</html>
