@@ -29,6 +29,7 @@
         });
 
         window.userChoice = function (choice) {
+            messages.innerHTML = "";
             const userMessage = document.createElement("div");
             userMessage.textContent = "Tú: " + choice;
             messages.appendChild(userMessage);
