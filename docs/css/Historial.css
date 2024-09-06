@@ -47,6 +47,10 @@ body {
 .description, .photos {
     margin-bottom: 20px;
 }
+.reserve-button a{
+    color: black;
+    text-decoration: white;
+}
 
 .description p {
     font-family: "Tinos","serif";

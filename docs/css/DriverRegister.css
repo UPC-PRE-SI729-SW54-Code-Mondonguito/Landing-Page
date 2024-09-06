@@ -89,15 +89,18 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 1em;
-    background-color: #5e3fd6;
+    background-color: #e1da30;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+.register-button a{
+    color: white;
+}
 
 .register-button:hover {
-    background-color: #442d9a;
+    background-color: #8f8914;
     transition: 0.3s;
 }
 

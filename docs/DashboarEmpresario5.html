@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración - ParkingNow</title>
-    <link rel="stylesheet" href="css/DashboardEmpresario3.css">
+    <link rel="stylesheet" href="css/DashboardReservasLista.css">
 </head>
 <body>
 <div class="container">
@@ -15,7 +15,6 @@
             <h2>ParkingNow</h2>
         </div>
         <ul class="menu">
-            <li><a href="#">Inicio</a></li>
             <li><a href="DashboardEmpresario3.html">Registro de locales</a></li>
             <li><a href="DashboarEmpresario5.html">Reservas</a></li>
             <li><a href="DashboardEmpresario2.html">Monitoreo y alarmas</a></li>
@@ -35,20 +34,29 @@
 
         <div class="sections-container">
             <div class="section">
-                <h2>Registro de Locales</h2>
+                <h2>Reservas activas</h2>
                 <div class="content-box">
-                <p>Locales registrados y su calificacion</p>
+                    <div class="reservation">
+                        <p>Conductor Diego <button class="favorite-button" data-parking="Playa Chiringuito Chatarra">Añadir a favoritos</button></p>
+                        <p>Conductor Omar <button class="favorite-button" data-parking="Playa Pisos Picados">Añadir a favoritos</button></p>
+                        <p>Conductor Rodrigo <button class="favorite-button" data-parking="Playa Arboleda Aceitosa">Añadir a favoritos</button></p>
+                        <p>Conductor Samuel <button class="favorite-button" data-parking="Playa Balsa Botín">Añadir a favoritos</button></p>
+                        <div id="favoritelist"></div>
+                    </div>
                 </div>
             </div>
 
             <div class="section">
-                <h2>Estadisticas</h2>
-                <div class="content-box">
-                    <p>Estadisticas de reservas pasadas, usuarios, tiempo de reservas.</p>
+                <h2>Mis Favoritos</h2>
+                <div class="content-box" id="favorite-list">
+                    <p>No tienes estacionamientos en favoritos aún.</p>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
+
+<script src="js/DashboardReservaLista.js"></script>
 </body>
 </html>
