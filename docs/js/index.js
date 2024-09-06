@@ -67,7 +67,7 @@
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
 
-        // Simula una llamada a la API para obtener promociones basadas en la ubicación
+
         fetch(`api/getPromotions?lat=${lat}&lon=${lon}`)
             .then(response => response.json())
             .then(data => {
@@ -99,3 +99,21 @@
             menu.style.display = 'block';
         }
     }
+
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            // Evita que el enlace recargue la página
+            e.preventDefault();
+
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 1,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });

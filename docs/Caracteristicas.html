@@ -120,14 +120,13 @@
 </footer>
 
 <script>
-    // Este script espera que el DOM esté completamente cargado antes de añadir los eventos
+
     document.addEventListener("DOMContentLoaded", function() {
-        // Desplazamiento suave a la sección de Misión cuando se hace clic en el botón
         document.getElementById("btnMision").addEventListener("click", function() {
             document.getElementById("Mision").scrollIntoView({ behavior: "smooth" });
         });
 
-        // Desplazamiento suave a la sección de Visión cuando se hace clic en el botón
+
         document.getElementById("btnVision").addEventListener("click", function() {
             document.getElementById("Vision").scrollIntoView({ behavior: "smooth" });
         });

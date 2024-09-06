@@ -117,7 +117,7 @@ body {
     text-decoration: underline;
 }
 
-/* Estilos del botón desplegable */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -166,7 +166,7 @@ body {
     background-color: #777;
 }
 
-/* Mostrar el dropdown al hacer clic */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -201,7 +201,7 @@ body {
         height: auto;
     }
 
-    /* Estilo del sidebar para móvil */
+
     .sidebar {
         width: 100%;
         padding: 10px;

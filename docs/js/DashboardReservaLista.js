@@ -1,10 +1,10 @@
-let favoriteList = []; // Lista para almacenar los estacionamientos favoritos
+let favoriteList = [];
 
-// Función para actualizar la lista de favoritos en la interfaz
+
 function updateFavoriteList() {
     const favoriteListContainer = document.getElementById('favorite-list');
 
-    // Limpiamos el contenido de la lista de favoritos
+
     favoriteListContainer.innerHTML = '';
 
     if (favoriteList.length === 0) {
@@ -19,30 +19,30 @@ function updateFavoriteList() {
     }
 }
 
-// Función para gestionar clics en el botón de favoritos
+
 function toggleFavorite(button) {
     const parkingName = button.getAttribute('data-parking');
     const isFavorite = favoriteList.includes(parkingName);
 
     if (!isFavorite) {
-        // Añadir a favoritos
+
         favoriteList.push(parkingName);
-        button.textContent = 'Eliminar de favoritos'; // Cambiar texto del botón
+        button.textContent = 'Eliminar de favoritos';
     } else {
-        // Quitar de favoritos
+
         favoriteList = favoriteList.filter(parking => parking !== parkingName);
-        button.textContent = 'Añadir a favoritos'; // Cambiar texto del botón
+        button.textContent = 'Añadir a favoritos';
     }
 
-    updateFavoriteList(); // Actualizar la lista de favoritos en la UI
+    updateFavoriteList();
 }
 
-// Añadir evento click a los botones de favoritos
+
 document.querySelectorAll('.favorite-button').forEach(button => {
     button.addEventListener('click', function() {
         toggleFavorite(button);
     });
 });
 
-// Inicializar la lista de favoritos vacía
+
 updateFavoriteList();
