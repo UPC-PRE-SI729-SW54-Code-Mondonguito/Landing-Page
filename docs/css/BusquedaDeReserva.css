@@ -110,3 +110,13 @@ body {
     margin-top: 20px;
     color: #777;
 }
+@media (max-width: 400px) {
+    .map-container{
+        display: none;
+    }
+    .info-box{
+        width: 100%;
+    }
+
+
+}

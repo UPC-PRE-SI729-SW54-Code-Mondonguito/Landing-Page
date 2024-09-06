@@ -119,7 +119,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 1em;
-    background-color: #5e3fd6;
+    background-color: #c5bf48;
     color: white;
     border: none;
     border-radius: 5px;
@@ -127,7 +127,7 @@ body {
 
 }
 .login-button:hover {
-    background-color: #442d9a;
+    background-color: #b6b13b;
     transition: 0.3s;
 }
 
@@ -181,8 +181,61 @@ width: 15%;
 .loginImagen {
     width: 100%;
     height: 100%;
-    background-image: url(docs/img/parkingnow.png); /* Replace 'your-image-url.png' with your actual image path */
+    background-image: url(docs/img/parkingnow.png);
     background-size: cover;
     background-position: center;
     border-radius: 0 10px 10px 0;
+}
+
+.login-button a{
+    color: white;
+}
+@media (max-width: 480px) {
+    .loginImagen {
+        display: none;
+    }
+
+    .loginImagen2 {
+        display: none;
+    }
+
+    .login-form {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .login-form h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .input-group input {
+        width: calc(100% - 20px);
+        padding: 4px;
+        left: 10px;
+        font-size: 0.9em;
+        border: 1px solid #ccc;
+    }
+    .LogoInicio {
+        top: 5%;
+        left: 44%;
+        position: absolute;
+        width: 15%;
+        box-shadow: 0px 5px 6px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+
+        margin: 10px;
+        border-radius: 10px;
+
+        max-width: 1000px;
+        height: 80%;
+        width: 100%;
+
+    }
+
+    .login-button a{
+        color: white;
+    }
 }

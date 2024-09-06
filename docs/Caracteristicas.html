@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKINGNOW</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&family=Kalam:wght@300;400;700&family=Inter:wght@100..900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Caracteristicas.css">
+</head>
+
+<body>
+<button id="chatButton" class="chat-button">P</button>
+
+<div id="chatBox" class="chat-box">
+    <div class="chat-header">
+        <span>Chat</span>
+        <button id="closeChat" class="close-button">&times;</button>
+    </div>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <div id="options">
+            <button class="questions1" onclick="userChoice('Disponibilidad de estacionamientos')">Disponibilidad de estacionamientos</button>
+            <button class="questions1" onclick="userChoice('¿Cómo reservar un espacio?')">¿Cómo reservar un espacio?</button>
+            <button class="questions1" onclick="userChoice('Rutas óptimas para el estacionamiento')">Rutas óptimas para el estacionamiento</button>
+        </div>
+    </div>
+</div>
+
+<section class="Banner">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="img/parkingnow.png" alt="PARKINGNOW" class="ParkingNow_Logo"></a>
+        </div>
+        <div class="menu">
+            <a href="index.html" class="hover">Inicio</a>
+            <a href="Caracteristicas.html" class="hover">Características</a>
+            <a href="javascript:void(0)" class="hover" id="btnMision">Misión</a>
+            <a href="javascript:void(0)" class="hover" id="btnVision">Visión</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="hover dropdown-toggle">Reservar Espacio</a>
+                <div class="dropdown-menu">
+                    <a href="reserve-lima" class="hover">Lima</a>
+                    <a href="reserve-arequipa" class="hover">Arequipa</a>
+                    <a href="reserve-cusco" class="hover">Cusco</a>
+                </div>
+            </div>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-button"><a href="Login.html">Iniciar sesión</a></button>
+            <button class="register-button"><a href="Register.html">Regístrate</a></button>
+        </div>
+    </nav>
+</section>
+
+<section class="Introduction">
+    <div class="container1">
+        <div class="content">
+            <h1>Características de <span class="success">PARKINGNOW</span></h1>
+            <p>
+                PARKINGNOW es una startup tecnológica enfocada en ofrecer una solución integral para el estacionamiento en tiempo real. Nuestra plataforma permite reservar y pagar por espacios usando localización geográfica y sensores infrarrojos para gestionar la disponibilidad de forma automatizada y eficiente.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="img/Estacionamiento.jpg" alt="Estacionamiento Inteligente">
+        </div>
+    </div>
+</section>
+
+<section id="Mision" class="Mision">
+    <div class="container2">
+        <div class="content2">
+            <h1>Misión de <span class="success">PARKINGNOW</span></h1>
+            <p>
+                Actuar como enlace entre conductores y propietarios, mejorando la experiencia de aparcamiento con tecnología eficiente.
+            </p>
+        </div>
+        <div class="image-container2">
+            <img src="img/Mision.jpg" alt="Imag_Mision">
+        </div>
+    </div>
+</section>
+
+<section id="Vision" class="Vision">
+    <div class="container2">
+        <div class="content2">
+            <h1>Visión de <span class="success">PARKINGNOW</span></h1>
+            <p>
+                Actuar como enlace entre conductores y propietarios, mejorando la experiencia de aparcamiento con tecnología eficiente.
+            </p>
+        </div>
+        <div class="image-container2">
+            <img src="img/Mision.jpg" alt="Imag_Mision">
+        </div>
+    </div>
+</section>
+
+<section class="bannerInfo">
+    <img src="img/Banner_1.jpg" class="object-contain" alt="banner">
+</section>
+
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-logo" href="index.html">
+            <a href="index.html"><img src="img/parkingnow.png" alt="PARKINGNOW" class="h-10"></a>
+
+        </div>
+        <div class="footer-menu">
+            <a href="about" class="hover">Acerca de</a>
+            <a href="features" class="hover">Características</a>
+            <a href="contact" class="hover">Contacto</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PARKINGNOW. Todos los derechos reservados.
+    </div>
+</footer>
+
+<script>
+    // Este script espera que el DOM esté completamente cargado antes de añadir los eventos
+    document.addEventListener("DOMContentLoaded", function() {
+        // Desplazamiento suave a la sección de Misión cuando se hace clic en el botón
+        document.getElementById("btnMision").addEventListener("click", function() {
+            document.getElementById("Mision").scrollIntoView({ behavior: "smooth" });
+        });
+
+        // Desplazamiento suave a la sección de Visión cuando se hace clic en el botón
+        document.getElementById("btnVision").addEventListener("click", function() {
+            document.getElementById("Vision").scrollIntoView({ behavior: "smooth" });
+        });
+    });
+</script>
+<script src="js/Caracteristicas.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
-/* Estilos Comunes */
+
+    /* Estilos Comunes */
 body {
     font-family: "Tinos", serif;
     opacity: 1;
@@ -27,14 +28,15 @@ body {
 .Register {
     font-family: "Kalam", cursive;
 }
+
 .LogoInicio{
     top: 5%;
     left: 4%;
     position: absolute;
     width: 8%;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-
 }
+
 .register-box {
     display: flex;
     width: 100%;
@@ -49,7 +51,6 @@ body {
 }
 
 .register-form h1 {
-
     margin: 0;
 }
 
@@ -60,7 +61,7 @@ body {
 }
 
 .register-form a {
-    color: #5e3fd6;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -83,8 +84,13 @@ body {
     border-radius: 5px;
 }
 
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
 .register-button {
-    width: 100%;
+    width: 48%;
     padding: 10px;
     font-size: 1em;
     background-color: #5e3fd6;
@@ -99,6 +105,22 @@ body {
     transition: 0.3s;
 }
 
+.cancel-button {
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #b52a28;
+    transition: 0.3s;
+}
+
 .loginImagen {
     width: 100%;
     height: 100%;
@@ -106,8 +128,118 @@ body {
     background-position: center;
     border-radius: 0 10px 10px 0;
 }
-    .footer-text{
-        position: absolute;
-        top: 93%;
-        color: white;
+
+.footer-text {
+    position: absolute;
+    top: 93%;
+    color: white;
+}
+    .reservation-section {
+        padding: 20px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .reservation-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .reservation-form label {
+        display: block;
+        margin: 10px 0 5px;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .reservation-form input, .reservation-form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .discount-info {
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .discount-info #discount-amount {
+        font-weight: bold;
+        color: #ff5722; /* Color del descuento */
+    }
+
+    .reservation-form button {
+        background-color: #ffeb3b;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    .reservation-form button:hover {
+        background-color: #fbc02d;
+    }
+
+    @media (max-width: 400px) {
+        .loginImagen {
+            display: none;
+        }
+
+        .loginImagen2 {
+            display: none;
+        }
+
+        .register-form {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .register-form h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .input-group input {
+            width: calc(100% - 20px);
+            padding: 4px;
+            left: 10px;
+            font-size: 0.9em;
+            border: 1px solid #ccc;
+        }
+        .LogoInicio {
+            top: 5%;
+            left: 44%;
+            position: absolute;
+            width: 15%;
+            box-shadow: 0px 5px 6px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+
+            margin: 10px;
+            border-radius: 10px;
+
+            max-width: 1000px;
+
+            width: 100%;
+
+        }
+
+        .login-button a{
+            color: white;
+        }
+        .footer-text{
+            top: 95%;
+            font-size: 13px;
+        }
     }

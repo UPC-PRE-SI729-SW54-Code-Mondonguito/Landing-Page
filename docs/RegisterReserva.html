@@ -35,10 +35,24 @@
                         <option value="transferencia">Transferencia bancaria</option>
                     </select>
                 </div>
+                <div class="discount-info">
+                    <p>Descuento Aplicado: <span id="discount-amount">20%</span></p>
+                </div>
 
-                <button type="submit" class="register-button">Reserve ya!</button>
+                <div class="input-group">
+                    <label for="hora" class="Register">Hora de la reserva</label>
+                    <input type="time" id="hora" class="Register">
+                </div>
+
+                <div class="button-group">
+
+                   <button type="submit" class="register-button"> <a href="ReservaRegistrada.html">Reserve ya!</a></button>
+                    <button type="button" class="cancel-button"><a href="ReservaCancelada.html">Cancelar</a></button>
+
+                </div>
             </form>
         </div>
+
 
         <div class="register-image">
             <img src="img/Conductor.jpg" alt="Imagen de Registro de Conductor" class="loginImagen">
@@ -48,4 +62,5 @@
 
 <p class="footer-text">© 2024 PARKINGNOW. Todos los derechos reservados.</p>
 </body>
+<script src="js/RegisterReserva.js"></script>
 </html>

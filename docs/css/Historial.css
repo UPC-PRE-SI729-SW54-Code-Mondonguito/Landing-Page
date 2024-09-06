@@ -124,3 +124,24 @@ body {
     margin-top: 20px;
     color: #777;
 }
+.reserve-button{
+    top: 70%;
+    left: 20%;
+}
+@media (max-width: 400px) {
+    .map-container{
+        display: none;
+    }
+    .info-box{
+        width: 100%;
+    }
+    .footer-text {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+    }
+    .reserve-button{
+        top: 80%;
+        left: 33%;
+    }
+}

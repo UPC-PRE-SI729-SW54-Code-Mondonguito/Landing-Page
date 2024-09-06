@@ -166,3 +166,33 @@ input#rate-5:checked ~ label {
     margin-top: 20px;
     color: #777;
 }
+@media (max-width: 400px) {
+    .map-container{
+        display: none;
+    }
+    .gm-style{
+        display: none;
+    }
+    .info-box{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .footer-text {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+    }
+    .reserve-button{
+        top: 80%;
+        left: 33%;
+    }
+    .star-widget label {
+        font-size: 20px;
+        color: #444;
+        padding: 15px;
+        float: right;
+        right: 10%;
+        transition: all 0.2s ease;
+        position: relative;
+    }
+}

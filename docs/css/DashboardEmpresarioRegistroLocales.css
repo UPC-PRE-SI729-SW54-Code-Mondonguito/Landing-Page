@@ -108,3 +108,98 @@ body {
     border-radius: 8px;
     height: 350px;
 }
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Estilo del sidebar para móvil */
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .LogoInicio {
+        width: 40px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .content-box {
+        margin: 10px 0;
+        padding: 10px;
+        height: auto;
+    }
+
+    .notification {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .notification-button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .security-alert {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .content-image {
+        width: 80px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .content-boxzzz {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .logo{
+        margin-bottom: 0;
+    }
+    .menu{
+        width: 80%;
+        font-size: 14px;
+    }
+
+}

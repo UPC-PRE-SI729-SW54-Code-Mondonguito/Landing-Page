@@ -19,9 +19,15 @@
             <li><a href="#">Reservas</a></li>
             <li><a href="#">Reservas</a></li>
             <li><a href="#">Soporte</a></li>
-            <li><a href="#">Seguimiento y alarmas de vehiculo</a></li>
+            <li><a href="#" id="tracking-alarm-button">Seguimiento y alarmas de vehículo</a></li>
             <li><a href="#">Configuración</a></li>
-            <li><a href="#">Notificaciones</a></li>
+            <li>
+                <a href="#" class="notification-button">
+                    Notificaciones
+                    <span class="exclamation-icon">!</span>
+                </a>
+            </li>
+
             <li><a href="#">Cerrar sesión</a></li>
         </ul>
     </div>
@@ -47,7 +53,56 @@
                 <p></p>
             </div>
         </div>
+
+        <div class="notification">
+            <p>Hay espacio desocupado cerca de su ubicación</p>
+        </div>
+        <div id="notificationChange" class="notification notification-change">
+            <p>Se ha cambiado la hora de una reserva. Revisa los detalles.</p>
+        </div>
+        <div id="notificationCancel" class="notification notification-cancel">
+            <p>Tu reserva ha sido cancelada por falta de disponibilidad. Considera estas opciones alternativas:</p>
+            <ul>
+                <li>Reserva en otra ubicación cercana.</li>
+                <li>Selecciona otra fecha y hora.</li>
+            </ul>
+        </div>
+
     </div>
 </div>
+
+<div id="tracking-alarm-section" class="section hidden">
+    <h2>Lugares concurrentes</h2>
+    <div class="content-boxzzz">
+        <img src="img/PlayaChiringuitoChatarra.jpg" alt="Playa Chiringuito Chatarra" class="content-image">
+        <p>Playa Chiringuito Chatarra: Un lugar popular para pasar el día. Amplio espacio y buena seguridad.            <button class="security-check-button" data-parking="Playa Chiringuito Chatarra">Verificar seguridad</button></p>
+
+    </div>
+    <div class="content-boxzzz">
+        <img src="img/EstacionamientoP.jpg" alt="Playa Pisos Picados" class="content-image">
+        <p>Playa Pisos Picados: Ideal para actividades recreativas con instalaciones de calidad.           <button class="security-check-button" data-parking="Playa Pisos Picados">Verificar seguridad</button></p>
+
+    </div>
+    <div class="content-boxzzz">
+        <img src="img/PlayaArboledaAceitosa.jpeg" alt="Playa Arboleda Aceitosa" class="content-image">
+        <p>Playa Arboleda Aceitosa: Conocida por su entorno natural y tranquilidad.            <button class="security-check-button" data-parking="Playa Arboleda Aceitosa">Verificar seguridad</button></p>
+
+    </div>
+    <div class="content-boxzzz">
+        <img src="img/PlayaBalsaBotin.jpg" alt="Playa Balsa Botín" class="content-image">
+        <p>Playa Balsa Botín: Popular entre los locales, con buen acceso y servicios.             <button class="security-check-button" data-parking="Playa Balsa Botín">Verificar seguridad</button></p>
+
+    </div>
+</div>
+
+        <div id="securityAlert" class="security-alert">
+            <p>Alerta de seguridad: Se ha detectado un problema en el estacionamiento seleccionado.</p>
+        </div>
+
+
+
+
+
 </body>
+<script src="js/DashboardConductor.js"></script>
 </html>

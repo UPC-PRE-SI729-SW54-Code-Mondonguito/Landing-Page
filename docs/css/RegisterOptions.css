@@ -246,3 +246,57 @@ body {
     top: 94%;
     color: white;
 }
+@media (max-width: 480px) {
+    .loginImagen {
+        display: none;
+    }
+
+    .loginImagen2 {
+        display: none;
+    }
+
+    .register-form {
+        padding: 30px;
+        width: 100%;
+        border-radius: 10px;
+        display: flow;
+    }
+
+    .register-form h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .input-group input {
+        width: calc(100% - 20px);
+        padding: 4px;
+        left: 10px;
+        font-size: 0.9em;
+        border: 1px solid #ccc;
+    }
+    .LogoInicio {
+        top: 5%;
+        left: 44%;
+        position: absolute;
+        width: 15%;
+        box-shadow: 0px 5px 6px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+
+        margin: 10px;
+        border-radius: 10px;
+
+        max-width: 1000px;
+        height: 80%;
+        width: 100%;
+
+    }
+
+    .login-button a{
+        color: white;
+    }
+    .footer-text{
+        top: 155%;
+    }
+}

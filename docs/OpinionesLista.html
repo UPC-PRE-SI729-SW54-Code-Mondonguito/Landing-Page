@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones</title>
+    <link rel="stylesheet" href="css/OpinionesLista.css">
+</head>
+<body>
+<header>
+    <button id="showReviewsButton" class="opinion-button">Opiniones</button>
+</header>
+
+<main class="container">
+    <section id="reviewsSection" class="hidden">
+        <h2>Opiniones</h2>
+        <ul id="reviewsList">
+
+        </ul>
+    </section>
+
+    <section id="feedbackSection" class="info-box">
+        <h2>Deja tu opinión</h2>
+        <div class="feedback-container">
+            <div class="feedback-image">
+                <img src="img/Conductor.jpg" alt="Imagen de Opinión">
+                <!--  <img src="img/parkingnow.png" alt="Imagen de Opinión">  para agregar mas podriamos poner denuevo eso-->
+
+            </div>
+        </div>
+        <form id="feedbackForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+
+            <label for="rating"><br>Calificación:</label>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5" value="5">
+                <label for="rate-5" title="5 stars">&#9733;</label>
+                <input type="radio" name="rate" id="rate-4" value="4">
+                <label for="rate-4" title="4 stars">&#9733;</label>
+                <input type="radio" name="rate" id="rate-3" value="3">
+                <label for="rate-3" title="3 stars">&#9733;</label>
+                <input type="radio" name="rate" id="rate-2" value="2">
+                <label for="rate-2" title="2 stars">&#9733;</label>
+                <input type="radio" name="rate" id="rate-1" value="1">
+                <label for="rate-1" title="1 star">&#9733;</label>
+            </div>
+
+            <label for="review">Opinión:</label>
+            <textarea id="review" class="Resenia" required></textarea>
+
+            <button type="submit" class="reserve-button">Enviar</button>
+
+            <div class="share-section">
+                <button id="shareButton" class="share-button">Compartir</button>
+                <div id="shareOptions" class="share-options hidden">
+                    <a href="#" id="share-facebook" class="share-link">Facebook</a>
+                    <a href="#" id="share-twitter" class="share-link">Twitter</a>
+                    <a href="#" id="share-linkedin" class="share-link">LinkedIn</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+</main>
+
+<script src="js/OpinionesLista.js"></script>
+</body>
+</html>

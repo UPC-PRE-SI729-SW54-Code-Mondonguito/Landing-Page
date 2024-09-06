@@ -99,12 +99,324 @@ body {
 
 .section h2 {
     font-size: 20px;
+    font-family: "Kalam","serif";
     margin-bottom: 10px;
+    padding-left: 20px;
 }
 
 .content-box {
     background-color: #2c2c2c;
     padding: 20px;
     border-radius: 8px;
-    height: 130px;
+    height: 110px;
+    margin: 30px;
+}
+
+.notification{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    padding: 8px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none; /* Inicialmente oculto */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.notification.show {
+    display: block;
+}
+
+.notification-button {
+    position: relative;
+    background-color: #555555;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.notification-button:hover {
+    background-color: #777777;
+}
+
+.exclamation-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: none; /* Oculto inicialmente */
+}
+
+.notification-button.active .exclamation-icon {
+    display: inline-block;
+
+}
+.notification-change {
+    top: 100px;
+    background-color: #2d333f;
+}
+
+.notification-change p {
+    margin: 0;
+}
+.notification-cancel {
+    background-color: #dc3545; /* Color rojo para indicar cancelación */
+}
+
+.notification-cancel p, .notification-cancel ul {
+    margin: 10px;
+}
+
+.notification-cancel ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.security-alert {
+    margin: 40px;
+
+    top: 60px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto inicialmente */
+    z-index: 1000;
+}
+
+.security-alert.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.security-alert {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto inicialmente */
+    z-index: 1000;
+}
+
+.security-alert.show {
+    display: block;
+}
+.content-boxzzz {
+    background-color: #2c2c2c;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 8px;
+    height: auto;
+     flex-direction: column;
+}
+
+.content-image {
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    margin: 10px 0;
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Estilo del sidebar para móvil */
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .LogoInicio {
+        width: 20%;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .content-box {
+        margin: 10px 0;
+        padding: 15px;
+        height: auto;
+    }
+
+    .notification {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .notification-button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .security-alert {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .content-image {
+        width: 50px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .content-boxzzz {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Estilo del sidebar para móvil */
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .LogoInicio {
+        width: 40px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .content-box {
+        margin: 10px 0;
+        padding: 10px;
+        height: auto;
+    }
+
+    .notification {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .notification-button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .security-alert {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .content-image {
+        width: 80px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .content-boxzzz {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .logo{
+        margin-bottom: 0;
+    }
+    .menu{
+        width: 80%;
+        font-size: 14px;
+    }
+
 }

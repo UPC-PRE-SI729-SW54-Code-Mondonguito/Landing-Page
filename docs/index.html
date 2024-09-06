@@ -8,20 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="vendor/alpine.min.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonWts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
             rel="stylesheet">
 </head>
-
 <body>
+<button id="chatButton" class="chat-button">
+    P
+</button>
+
+<div id="chatBox" class="chat-box">
+    <div class="chat-header">
+        <span>Chat</span>
+        <button id="closeChat" class="close-button">&times;</button>
+    </div>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <div id="options">
+            <button class="questions1" onclick="userChoice('Disponibilidad de estacionamientos')">Disponibilidad de estacionamientos</button>
+            <button class="questions1" onclick="userChoice('¿Cómo reservar un espacio?')">¿Cómo reservar un espacio?</button>
+            <button class="questions1" onclick="userChoice('Rutas óptimas para el estacionamiento')">Rutas óptimas para el estacionamiento</button>
+        </div>
+    </div>
+</div>
 
 <section class="Banner" @click.outside="mobileMenuOpen=false">
 
@@ -35,24 +51,29 @@
         </div>
 
         <div class="menu">
-            <a href="home" class="hover">
+            <a href="index.html" class="hover">
                 Inicio
             </a>
-            <a href="features" class="hover">
+            <a href="Caracteristicas.html" class="hover">
                 Características
             </a>
-            <a href="reserve" class="hover">
-                Reservar Espacio
-            </a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="hover dropdown-toggle">Reservar Espacio</a>
+                <div class="dropdown-menu">
+                    <a href="reserve-lima" class="hover">Lima</a>
+                    <a href="reserve-arequipa" class="hover">Arequipa</a>
+                    <a href="reserve-cusco" class="hover">Cusco</a>
+                </div>
+            </div>
         </div>
 
         <div class="auth-buttons">
             <button class="login-button">
-                <a href="login">iniciar sesion</a>
+                <a href="Login.html">Iniciar sesion</a>
             </button>
             <button class="register-button">
-                <a href="register">
-                    Regístrate
+                <a href="Register.html">
+                    Regístrar Cuenta
                 </a>
             </button>
         </div>
@@ -92,12 +113,19 @@
 
 </section>
 
-<section class="banner-section">
-    <img src="img/Banner_1.jpg" class="object-contain" alt="banner">
-    <div class="banner-text flex">
-        <p class="relative">
-            TU ESPACIO DE <br><span class="text-primary">ESTACIONAMIENTO</span>
-        </p>
+<section class="Introduction">
+    <div class="container1">
+        <div class="content">
+            <h1>Transforma <span class="success">Tu Experiencia</span><br> con PARKINGNOW</h1>
+            <p>Optimiza tu búsqueda de estacionamiento con nuestra plataforma digital en tiempo real, utilizando la localización geográfica y sensores avanzados.</p>
+            <a href="Login.html"> <button class="vip-button">Descubre PARKINGNOW</button> </a>
+            <p class="sub-text">
+                Miles de conductores ya confían en PARKINGNOW para encontrar y reservar sus espacios de estacionamiento.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="img/Estacionamiento.jpg" alt="Estacionamiento Inteligente">
+        </div>
     </div>
 </section>
 
@@ -138,7 +166,26 @@
 </section>
 
 
-<section class="bannerInfo">
+<section class="promotions-section">
+    <h2>Promociones Destacadas</h2>
+    <div class="promotion-grid">
+        <div class="promotion" id="promotion-lima">
+            <img src="img/Lima_Descuento.jpg" alt="Promoción en Lima" class="promotion-img">
+            <h3>Promoción en Lima</h3>
+            <p>¡Descuento del 20% en tu primera reserva!</p>
+        </div>
+        <div class="promotion" id="promotion-arequipa">
+            <img src="img/Arequipa_Descuento.jpg" alt="Promoción en Arequipa" class="promotion-img">
+            <h3>Promoción en Arequipa</h3>
+            <p>¡Reserva ahora y obtén 15% de descuento!</p>
+        </div>
+        <div class="promotion" id="promotion-cusco">
+            <img src="img/Cuzco_Descuento.jpg" alt="Promoción en Cusco" class="promotion-img">
+            <h3>Promoción en Cusco</h3>
+            <p>¡10% de descuento en todos los espacios!</p>
+        </div>
+    </div>
+</section>
 
 
 </section>
@@ -153,7 +200,7 @@
             Con PARKINGNOW puedes encontrar y reservar tu espacio en segundos.
         </p>
         <button class="cta-button">
-            <a href="reserve">
+            <a href="Login.html">
                 Comienza Ahora
             </a>
         </button>
@@ -167,7 +214,7 @@
         </div>
         <div class="footer-menu">
             <a href="about" class="hover">Acerca de</a>
-            <a href="features" class="hover">Características</a>
+            <a href="features"  class="hover">Características</a>
             <a href="contact" class="hover">Contacto</a>
         </div>
     </div>
@@ -177,4 +224,6 @@
 </footer>
 
 </body>
+
+<script src="js/index.js"></script>
 </html>
