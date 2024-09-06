@@ -58,6 +58,35 @@ a {
 .menu a:hover {
     color: #ffeb3b;
 }
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #ffeb3b;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #fbc02d;
+    color: #ffffff;
+}
+
+
 
 .button, .login-button, .register-button, .cta-button, .learn-more-button, .auth-buttons-mobile button {
     padding: 10px 20px;
