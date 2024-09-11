@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKINGNOW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonWts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet">
+</head>
+<body>
+<button id="chatButton" class="chat-button">
+    P
+</button>
+
+<div id="chatBox" class="chat-box">
+    <div class="chat-header">
+        <span>Chat</span>
+        <button id="closeChat" class="close-button">&times;</button>
+    </div>
+    <div id="chat-container">
+        <div id="messages" style="text-align: center;">¿Como puedo ayudarte?</div>
+        <div id="options">
+            <button class="questions1" onclick="userChoice('Disponibilidad de estacionamientos')">Disponibilidad de estacionamientos</button>
+            <button class="questions1" onclick="userChoice('¿Cómo reservar un espacio?')">¿Cómo reservar un espacio?</button>
+            <button class="questions1" onclick="userChoice('Rutas óptimas para el estacionamiento')">Rutas óptimas para el estacionamiento</button>
+        </div>
+    </div>
+</div>
+
+<section class="Banner" >
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="">
+                <img src="img/parkingnow.png" alt="PARKINGNOW" class="ParkingNow_Logo">
+            </a>
+        </div>
+
+        <div class="menu">
+            <a href="index.html" class="hover">
+                Inicio
+            </a>
+            <a href="Caracteristicas.html" class="hover">
+                Características
+            </a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="hover dropdown-toggle">Reservar Espacio</a>
+                <div class="dropdown-menu">
+                    <a href="RegisterReserva.html" class="hover">Lima</a>
+                    <a href="RegisterReserva.html" class="hover">Arequipa</a>
+                    <a href="RegisterReserva.html" class="hover">Cusco</a>
+                </div>
+            </div>
+            <a href="About.html" class="hover">Contáctenos</a>
+        </div>
+
+        <form class="search-form" action="BusquedaDeReserva.html" method="GET">
+            <input type="text" name="query" class="search-input" placeholder="Buscar estacionamiento...">
+            <button type="submit" class="search-button">Buscar</button>
+        </form>
+
+        <div class="auth-buttons">
+            <button class="login-button">
+                <a href="Login.html">Iniciar sesion</a>
+            </button>
+            <button class="register-button">
+                <a href="RegisterOptions.html">
+                    Regístrar Cuenta
+                </a>
+            </button>
+        </div>
+
+
+
+
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="menu-content">
+            <div class="grid">
+                <a href="index.html" class="hover">
+                    Inicio
+                </a>
+                <a href="Caracteristicas.html" class="hover">
+                    Características
+                </a>
+                <a href="RegisterReserva.html" class="hover">
+                    Reservar Espacio
+                </a>
+                <div class="auth-buttons-mobile">
+                    <button class="login-button-mobile">
+                        <a href="Login.html">
+                            Iniciar Sesión
+                        </a>
+                    </button>
+                    <button class="register-button-mobile">
+                        <a href="RegisterOptions.html">
+                            Regístrate
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="Introduction">
+    <div class="container1">
+        <div class="content">
+            <h1>Transforma <span class="success">Tu Experiencia</span><br> con PARKINGNOW</h1>
+            <p>Deja de preocuparte por los estacionamientos, PARKINGNOW se encarga de todo.</p>
+            <a href="Login.html"> <button class="vip-button">Descubre PARKINGNOW</button> </a>
+            <p class="sub-text">
+                Miles de conductores ya confían en PARKINGNOW para encontrar y reservar sus espacios de estacionamiento.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="img/Estacionamiento.jpg" alt="Estacionamiento Inteligente">
+        </div>
+    </div>
+</section>
+
+<section class="locations-section">
+    <h1 class="font-extrabold">
+        Ciudades donde puedes encontrar PARKINGNOW
+    </h1>
+
+    <div class="locations-grid">
+        <div>
+            <img src="img/Lima.png" alt="Lima" class="location-image">
+            <p class="location-text">
+                Lima
+            </p>
+            <p class="location-description text-center text-lg mt-1">
+                La vibrante capital de Perú, conocida por su rica historia, arquitectura colonial y vibrante vida nocturna.
+            </p>
+        </div>
+        <div>
+            <img src="img/Arequipa.jpg" alt="Arequipa" class="location-image">
+            <p class="location-text">
+                Arequipa
+            </p>
+            <p class="location-description  ">
+                Famosa por sus edificaciones de sillar blanco y la majestuosidad del volcán Misti que la rodea.
+            </p>
+        </div>
+        <div>
+            <img src="img/Cuzco.jpg" alt="Cusco" class="location-image">
+            <p class="location-text">
+                Cusco
+            </p>
+            <p class="location-description text-center text-lg mt-1">
+                La antigua capital del Imperio Inca, famosa por su historia, ruinas arqueológicas y su cercanía a Machu Picchu.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="promotions-section">
+    <h2>Promociones Destacadas</h2>
+    <div class="promotion-grid">
+        <div class="promotion" id="promotion-lima">
+            <img src="img/Lima_Descuento.jpg" alt="Promoción en Lima" class="promotion-img">
+            <h3>Promoción en Lima</h3>
+            <p>¡Descuento del 20% en tu primera reserva!</p>
+        </div>
+        <div class="promotion" id="promotion-arequipa">
+            <img src="img/Arequipa_Descuento.jpg" alt="Promoción en Arequipa" class="promotion-img">
+            <h3>Promoción en Arequipa</h3>
+            <p>¡Reserva ahora y obtén 15% de descuento!</p>
+        </div>
+        <div class="promotion" id="promotion-cusco">
+            <img src="img/Cuzco_Descuento.jpg" alt="Promoción en Cusco" class="promotion-img">
+            <h3>Promoción en Cusco</h3>
+            <p>¡10% de descuento en todos los espacios!</p>
+        </div>
+    </div>
+</section>
+
+<section class="benefits-section">
+    <h2>Beneficios del Servicio</h2>
+
+    <div class="benefits-grid">
+
+        <div class="benefit">
+            <h3>Conductores Urbanos Frecuentes</h3>
+            <p>
+                PARKINGNOW proporciona una experiencia de estacionamiento fluida para los conductores urbanos,
+                permitiendo encontrar y reservar espacios en tiempo real. Con nuestra plataforma, pueden ahorrar tiempo
+                y reducir el estrés asociado con la búsqueda de estacionamiento. Gracias a la tecnología de sensor
+                infrarrojo, los conductores tienen información en tiempo real sobre la disponibilidad de espacios, lo que
+                optimiza sus rutas y ofrece una mayor seguridad sobre el estado de su vehículo mientras está estacionado.
+            </p>
+        </div>
+
+
+        <div class="benefit">
+            <h3>Dueños de Playas de Estacionamientos</h3>
+            <p>
+                PARKINGNOW ofrece a los dueños de estacionamientos una plataforma eficiente para la gestión de sus
+                espacios. La solución permite mejorar la organización y el monitoreo de las áreas de estacionamiento,
+                brindando mayor seguridad y comodidad a los clientes. Además, la integración de un sistema de pagos
+                automatizado y la optimización del flujo de vehículos contribuyen a acelerar procesos y formalizar la
+                operación del negocio, generando mayor confianza y satisfacción para los clientes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="promotions-section"></section>
+    <h2>Seguridad y confianza</h2>
+    <div class="promotion-grid">
+        <div class="promotion" id="promotion-lima">
+            <img src="img/seguridad_1.jpg" alt="Promoción en Lima" class="promotion-img">
+            <h3>Una aplicacion que te respalda</h3>
+            <p>Pensamos en ti y en tus necesidades, tu seguridad es lo primero nos comprometemos en brindar una experiencia segura</p>
+        </div>
+        <div class="promotion" id="promotion-arequipa">
+            <img src="img/monitoreo_landing.jpg" alt="Promoción en Arequipa" class="promotion-img">
+            <h3>Monitoreo en tiempo real</h3>
+            <p>Gracias a nuestros monitoreo por sensores podras ver que tu vehiculo sigue donde lo aparcaste</p>
+        </div>
+        <div class="promotion" id="promotion-cusco">
+            <img src="img/confianza_mutua.jpg" alt="Promoción en Cusco" class="promotion-img">
+            <h3>Tu lugar tu elección</h3>
+            <p>Observa las opiniones de los clientes y las playas para ver donde te quedas y aquien le prestas servicios</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="cta-section">
+    <img src="img/Estacionamientos.jpg" alt="cta-banner" class="cta-banner">
+    <div class="cta-content">
+        <p class="cta-title">
+            ¿BUSCAS UN ESTACIONAMIENTO?<br>TE AYUDAMOS A ENCONTRARLO
+        </p>
+        <p class="cta-subtitle">
+            Con PARKINGNOW puedes encontrar y reservar tu espacio en segundos.
+        </p>
+        <button class="cta-button">
+            <a href="Login.html">
+                Comienza Ahora
+            </a>
+        </button>
+    </div>
+</section>
+
+
+
+
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="img/parkingnow.png" alt="PARKINGNOW" class="h-10">
+        </div>
+        <div class="footer-menu">
+            <a href="About.html" class="hover">Acerca de</a>
+            <a href="Caracteristicas.html"  class="hover">Características</a>
+            <a href="About.html" class="hover">Contacto</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 PARKINGNOW. Todos los derechos reservados.
+    </div>
+</footer>
+
+</body>
+
+<script src="js/index.js"></script>
+</html>
