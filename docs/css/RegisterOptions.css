@@ -297,4 +297,7 @@ body {
     .footer-text{
         top: 155%;
     }
+    .cta-title p{
+        display: none;
+    }
 }
