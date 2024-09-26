@@ -9,36 +9,40 @@
 <body>
 <div class="container">
 
-    <div class="sidebar">
-        <div class="logo">
-            <a href="index.html" class="login-link"><img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio"></a>
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+        <div class="logo" aria-label="ParkingNow Logo">
+            <a href="index.html" class="login-link" aria-label="Go to Home Page">
+                <img src="img/parkingnow.png" alt="ParkingNow Logo" class="LogoInicio">
+            </a>
             <h2>ParkingNow</h2>
         </div>
-        <ul class="menu">
-            <li><a href="DashboardEmpresario.html">Home</a></li>
-            <li><a href="DashboardEmpresario3.html">Register Locations</a></li>
-            <li><a href="DashboarEmpresario5.html">Reservations</a></li>
-            <li><a href="DashboardEmpresario2.html">Monitoring and Alarms</a></li>
-            <li><a href="DashboardEmpresario4.html">Settings</a></li>
-            <li><a href="DashboardEmpresarioRegistroLocales2.html">Notifications</a></li>
-            <li><a href="index.html">Log Out</a></li>
-        </ul>
-    </div>
+        <nav>
+            <ul class="menu" aria-label="Main Menu">
+                <li><a href="DashboardEmpresario.html" aria-label="Home">Home</a></li>
+                <li><a href="DashboardEmpresario3.html" aria-label="Register Locations">Register Locations</a></li>
+                <li><a href="DashboarEmpresario5.html" aria-label="Reservations">Reservations</a></li>
+                <li><a href="DashboardEmpresario2.html" aria-label="Monitoring and Alarms">Monitoring and Alarms</a></li>
+                <li><a href="DashboardEmpresario4.html" aria-label="Settings">Settings</a></li>
+                <li><a href="DashboardEmpresarioRegistroLocales2.html" aria-label="Notifications">Notifications</a></li>
+                <li><a href="index.html" aria-label="Log Out">Log Out</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <div class="main-content">
-        <div class="header">
-            <div class="profile-picture">
-                <img src="img/Conductor.jpg" alt="User">
+    <main class="main-content" aria-label="Main Content Area">
+        <header class="header" aria-label="Notifications Header">
+            <div class="profile-picture" aria-label="User Profile Picture">
+                <img src="img/Conductor.jpg" alt="User Profile Picture">
             </div>
             <h1>Notifications</h1>
-        </div>
+        </header>
 
-        <div class="section">
-            <div class="content-box">
+        <section class="section" aria-label="Recent History Section">
+            <div class="content-box" aria-label="Recent History Content">
                 <p>(Recent History)</p>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </div>
 </body>
 </html>

@@ -9,17 +9,20 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" role="main" aria-labelledby="confirmation-title">
 
-    <div class="confirmation-box">
-        <h1 class="confirmation-title">Reservation Recorded!</h1>
+    <div class="confirmation-box" aria-live="polite">
+        <h1 class="confirmation-title" id="confirmation-title">Reservation Recorded!</h1>
         <p class="confirmation-message">The receipt has been sent to your email.</p>
 
-        <a href="BusquedaDeReserva.html" class="home-button">Continue</a>
-        <a href="DashboardConductor.html" class="home-button">Return to Home</a>
+        <div class="button-group">
+            <a href="BusquedaDeReserva.html" class="home-button" role="button">Continue</a>
+            <a href="DashboardConductor.html" class="home-button" role="button">Return to Home</a>
+        </div>
     </div>
 </div>
 
 <p class="footer-text">© 2024 PARKINGNOW. All rights reserved.</p>
+
 </body>
 </html>

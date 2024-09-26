@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="css/Login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/Login.css">
 </head>
 
 <body>
 
-<a href="index.html" class="login-link"><img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio"></a></p>
+<a href="index.html" class="login-link" aria-label="Return to home page"><img src="img/parkingnow.png" alt="ParkingNow Logo" class="LogoInicio"></a>
 
 <div class="container">
 
-  <div class="login-box">
+    <div class="login-box">
 
-    <div class="login-form"><h1 class="Login">
-      Login
-    </h1>
-      <p>Doesn't have an Account? Create your Account <a href="RegisterOptions.html" class="register">Sign up</a></p>
-      <form>
-        <div class="input-group">
-          <label for="email" class="Login">Email Address</label>
-          <input type="email" id="email" class="Login" placeholder="you@example.com">
-        </div>
-        <div class="input-group">
-          <label for="password" class="Login">Password</label>
-          <input type="password" id="password" class="Login" placeholder="Enter 6 characters or more">
-        </div>
-        <div class="checkbox-group">
-          <input type="checkbox" id="remember-me">
-          <label for="remember-me" class="remember">Remember me</label>
-            <a href="ForgotPassword.html" class="forgot-password">forgot password?</a>
-        </div>
-     <button type="submit" class="login-button"><a href="DashboardConductor.html">Login</a></button>
-      </form>
+        <div class="login-form">
+            <h1 class="Login" aria-label="Login Title">Login</h1>
+            <p>Don't have an account? Create your account <a href="RegisterOptions.html" class="register">Sign up</a></p>
+            <form>
+                <div class="input-group">
+                    <label for="email" class="Login">Email Address</label>
+                    <input type="email" id="email" class="Login" placeholder="you@example.com" aria-label="Email Address">
+                </div>
+                <div class="input-group">
+                    <label for="password" class="Login">Password</label>
+                    <input type="password" id="password" class="Login" placeholder="Enter 6 characters or more" aria-label="Password">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember-me" aria-label="Remember Me">
+                    <label for="remember-me" class="remember">Remember me</label>
+                    <a href="ForgotPassword.html" class="forgot-password" aria-label="Forgot Password">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-button" aria-label="Login Button">
+                    <a href="DashboardConductor.html">Login</a>
+                </button>
+            </form>
 
-      <p class="with">or login with</p>
-      <div class="social-login">
+            <p class="with" aria-label="Alternate login methods">or login with</p>
+            <div class="social-login">
+                <button class="google-login" aria-label="Login with Google">
+                    <img src="img/Google.png" alt="Google Login" class="ImageButton">
+                </button>
+                <button class="facebook-login" aria-label="Login with Facebook">
+                    <img src="img/Facebook.png" alt="Facebook Login" class="ImageButton">
+                </button>
+            </div>
+        </div>
 
-        <button class="google-login"><img src="img/Google.png" alt="loginImagen" class="ImageButton"> </button>
-        <button class="facebook-login"><img src="img/Facebook.png" alt="loginImagen" class="ImageButton"></button>
-      </div>
+        <div class="login-image2" aria-label="Login Illustration">
+            <img src="img/Estacionamiento.jpg" alt="Parking Image" class="loginImagen">
+        </div>
     </div>
-
-    <div class="login-image2">
-      <img src="img/Estacionamiento.jpg" alt="loginImagen" class="loginImagen">
-    </div>
-  </div>
 </div>
 </body>
 </html>

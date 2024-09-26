@@ -8,53 +8,53 @@
     <link rel="stylesheet" href="css/DriverRegister.css">
 </head>
 <body>
-<a href="index.html" class="login-link">
-    <img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio">
+<a href="index.html" class="login-link" aria-label="Ir a la página de inicio">
+    <img src="img/parkingnow.png" alt="ParkingNow Logo" class="LogoInicio">
 </a>
 <div class="container">
 
     <div class="register-box">
 
         <div class="register-form">
-            <h1 class="Register">Secure your space from the comfort of your home</h1>
+            <h1 class="Register" aria-label="Título de registro">Secure your space from the comfort of your home</h1>
 
-            <form>
+            <form id="driverRegistrationForm" aria-labelledby="formHeading">
                 <div class="input-group">
                     <label for="nombre" class="Register">First Name</label>
-                    <input type="text" id="nombre" class="Register" placeholder="Enter your first name">
+                    <input type="text" id="nombre" class="Register" placeholder="Enter your first name" required aria-label="Campo para ingresar el nombre">
                 </div>
 
                 <div class="input-group">
                     <label for="apellidos" class="Register">Last Name</label>
-                    <input type="text" id="apellidos" class="Register" placeholder="Enter your last name">
+                    <input type="text" id="apellidos" class="Register" placeholder="Enter your last name" required aria-label="Campo para ingresar el apellido">
                 </div>
 
                 <div class="input-group">
                     <label for="email" class="Register">Email Address</label>
-                    <input type="email" id="email" class="Register" placeholder="example@email.com">
+                    <input type="email" id="email" class="Register" placeholder="example@email.com" required aria-label="Campo para ingresar el correo electrónico">
                 </div>
 
                 <div class="input-group">
                     <label for="password" class="Register">Password</label>
-                    <input type="password" id="password" class="Register" placeholder="Enter your password">
+                    <input type="password" id="password" class="Register" placeholder="Enter your password" required aria-label="Campo para ingresar la contraseña">
                 </div>
 
                 <div class="input-group">
                     <label for="confirm-password" class="Register">Confirm Password</label>
-                    <input type="password" id="confirm-password" class="Register" placeholder="Repeat your password">
+                    <input type="password" id="confirm-password" class="Register" placeholder="Repeat your password" required aria-label="Campo para repetir la contraseña">
                 </div>
 
                 <div class="input-group">
                     <label for="placa" class="Register">Establishment Location</label>
-                    <input type="text" id="placa" class="Register" placeholder="Enter location">
+                    <input type="text" id="placa" class="Register" placeholder="Enter location" required aria-label="Campo para ingresar la ubicación del establecimiento">
                 </div>
 
                 <div class="input-group">
                     <label for="dni" class="Register">Tax ID (RUC)</label>
-                    <input type="text" id="dni" class="Register" placeholder="12345678">
+                    <input type="text" id="dni" class="Register" placeholder="12345678" required aria-label="Campo para ingresar el RUC">
                 </div>
 
-                <button type="submit" class="register-button">Register</button>
+                <button type="submit" class="register-button" aria-label="Enviar el formulario de registro">Register</button>
             </form>
 
         </div>

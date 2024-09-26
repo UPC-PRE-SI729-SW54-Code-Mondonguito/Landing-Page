@@ -9,58 +9,59 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" role="main" aria-labelledby="registration-title">
 
     <div class="register-box">
 
         <div class="register-form">
-            <h1 class="Register">Secure Your Space with PARKINGNOW</h1>
+            <h1 class="Register" id="registration-title">Secure Your Space with PARKINGNOW</h1>
 
-            <form>
+            <form aria-label="Driver registration form">
                 <div class="input-group">
-                    <label for="name" class="Register">Name...</label>
-                    <input type="text" id="name" class="Register" placeholder="Enter your name">
+                    <label for="name" class="Register">Name</label>
+                    <input type="text" id="name" class="Register" placeholder="Enter your name" required aria-required="true">
                 </div>
 
                 <div class="input-group">
                     <label for="number-of-spaces" class="Register">Number of Spaces</label>
-                    <input type="number" id="number-of-spaces" class="Register" placeholder="Enter the number of spaces">
+                    <input type="number" id="number-of-spaces" class="Register" placeholder="Enter the number of spaces" required min="1" aria-required="true">
                 </div>
 
                 <div class="input-group">
                     <label for="payment-method" class="Register">Payment Method</label>
-                    <select id="payment-method" class="Register">
+                    <select id="payment-method" class="Register" required aria-required="true">
+                        <option value="" disabled selected>Select your payment method</option>
                         <option value="credit-card">Credit/Debit Card</option>
                         <option value="paypal">PayPal</option>
                         <option value="bank-transfer">Bank Transfer</option>
                     </select>
                 </div>
-                <div class="discount-info">
+
+                <div class="discount-info" aria-live="polite">
                     <p>Discount Applied: <span id="discount-amount">20%</span></p>
                 </div>
 
                 <div class="input-group">
                     <label for="reservation-time" class="Register">Reservation Time</label>
-                    <input type="time" id="reservation-time" class="Register">
+                    <input type="time" id="reservation-time" class="Register" required aria-required="true">
                 </div>
 
                 <div class="button-group">
-
-                   <button type="submit" class="register-button"> <a href="ReservaRegistrada.html">Reserve Now!</a></button>
-                    <button type="button" class="cancel-button"><a href="ReservaCancelada.html">Cancel</a></button>
-
+                    <button type="submit" class="register-button">Reserve Now!</button>
+                    <button type="button" class="cancel-button">
+                        <a href="ReservaCancelada.html" style="text-decoration: none; color: inherit;">Cancel</a>
+                    </button>
                 </div>
             </form>
         </div>
 
-
         <div class="register-image">
-            <img src="img/Conductor.jpg" alt="Imagen de Registro de Conductor" class="loginImagen">
+            <img src="img/Conductor.jpg" alt="Driver Registration Image" class="loginImagen">
         </div>
     </div>
 </div>
 
 <p class="footer-text">© 2024 PARKINGNOW. All rights reserved.</p>
-</body>
 <script src="js/RegisterReserva.js"></script>
+</body>
 </html>

@@ -9,51 +9,68 @@
 <body>
 <div class="container">
 
-    <div class="sidebar">
-        <div class="logo">
-            <a href="index.html" class="login-link"><img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio"></a>
+    <div class="sidebar" aria-label="Sidebar Navigation">
+        <div class="logo" aria-label="ParkingNow Logo">
+            <a href="index.html" class="login-link" aria-label="Go to Home Page">
+                <img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio">
+            </a>
             <h2>ParkingNow</h2>
         </div>
-        <ul class="menu">
-            <li><a href="DashboardConductor.html">Home</a></li>
-            <li><a href="DashboardConductor6.html">Reservations</a></li>
-            <li><a href="RegisterReserva.html">Register Reservation</a></li>
-            <li><a href="About.html">Support</a></li>
-            <li><a href="DashboardConductor4.html" id="tracking-alarm-button">Vehicle Tracking and Alarms</a></li>
-            <li><a href="DashboardConductor5.html">Settings</a></li>
+        <ul class="menu" aria-label="Main Menu">
+            <li><a href="DashboardConductor.html" aria-label="Dashboard Home">Home</a></li>
+            <li><a href="DashboardConductor6.html" aria-label="View Reservations">Reservations</a></li>
+            <li><a href="RegisterReserva.html" aria-label="Register a New Reservation">Register Reservation</a></li>
+            <li><a href="About.html" aria-label="Support Information">Support</a></li>
+            <li><a href="DashboardConductor4.html" id="tracking-alarm-button" aria-label="Vehicle Tracking and Alarms">Vehicle Tracking and Alarms</a></li>
+            <li><a href="DashboardConductor5.html" aria-label="Settings">Settings</a></li>
             <li>
-                <a href="DashboardConductor6.html" class="notification-button">
+                <a href="DashboardConductor6.html" class="notification-button" aria-label="Notifications">
                     Notifications
                     <span class="exclamation-icon">!</span>
                 </a>
             </li>
-            <li><a href="index.html">Log Out</a></li>
+            <li><a href="index.html" aria-label="Log Out">Log Out</a></li>
         </ul>
     </div>
 
     <div class="main-content">
-        <div class="header">
-            <div class="profile-picture">
-                <img src="img/Conductor.jpg" alt="User">
+        <div class="header" aria-label="Header Section">
+            <div class="profile-picture" aria-label="User Profile Picture">
+                <img src="img/Conductor.jpg" alt="User" aria-label="User Profile Image">
             </div>
             <h1>Welcome...</h1>
         </div>
 
         <div class="sections-container">
-            <div class="section">
+            <div class="section" aria-label="Registered Locations Section">
                 <h2>Registered Locations</h2>
-                <div class="content-box">
+                <div class="content-box" aria-label="Content about registered locations">
                     <p>Registered locations and their ratings</p>
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" aria-label="Statistics Section">
                 <h2>Statistics</h2>
-                <div class="content-box">
+                <div class="content-box" aria-label="Content about statistics">
                     <p>Statistics of past reservations, users, reservation times.</p>
                 </div>
             </div>
         </div>
 
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31214.987121428927!2d-77.17331100788543!3d-12.052231267931981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cdeef8c72e01%3A0x1ac2d789635b98fb!2sEstaci
+        <div class="map-container" aria-label="Map Display">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31214.987121428927!2d-77.17331100788543!3d-12.052231267931981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cdeef8c72e01%3A0x1ac2d789635b98fb!2sEstacionamiento%20SIMA!5e0!3m2!1ses-419!2spe!4v1725218090198!5m2!1ses-419!2spe"
+                    width="1200"
+                    height="250"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Google Map showing Estacionamiento SIMA">
+            </iframe>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/DashboardConductor.js"></script>
+</html>

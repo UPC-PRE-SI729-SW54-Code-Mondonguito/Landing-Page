@@ -23,85 +23,64 @@
     P
 </button>
 
-<div id="chatBox" class="chat-box">
+<div id="chatBox" class="chat-box" role="dialog" aria-labelledby="chatTitle" aria-describedby="chatDesc">
     <div class="chat-header">
-        <span>Chat</span>
-        <button id="closeChat" class="close-button">&times;</button>
+        <h2 id="chatTitle">Chat</h2>
+        <button id="closeChat" class="close-button" aria-label="Close chat">&times;</button>
     </div>
     <div id="chat-container">
-        <div id="messages"></div>
-        <div id="options">
-            <button class="questions1" onclick="userChoice('Availability of parking spaces')">Availability of parking spaces</button>
-            <button class="questions1" onclick="userChoice('How to reserve a space?')">How to reserve a space?</button>
-            <button class="questions1" onclick="userChoice('Optimal routes for parking')">Optimal routes for parking</button>
+        <div id="messages" aria-live="polite" aria-relevant="all"></div>
+        <div id="options" role="group" aria-label="User questions">
+            <button class="questions1" onclick="userChoice('Availability of parking spaces')" aria-label="Ask about availability of parking spaces">Availability of parking spaces</button>
+            <button class="questions1" onclick="userChoice('How to reserve a space?')" aria-label="Ask how to reserve a space">How to reserve a space?</button>
+            <button class="questions1" onclick="userChoice('Optimal routes for parking')" aria-label="Ask about optimal routes for parking">Optimal routes for parking</button>
         </div>
     </div>
 </div>
-
-
-<section class="Banner">
-
-    <nav class="navbar">
-
+<section class="Banner" aria-label="Main navigation">
+    <nav class="navbar" role="navigation" aria-label="Main menu">
         <div class="logo">
-            <a href="">
+            <a href="#" aria-label="Go to homepage">
                 <img src="img/parkingnow.png" alt="PARKINGNOW" class="ParkingNow_Logo">
             </a>
         </div>
 
-        <div class="menu">
-            <a href="index.html" class="hover">
-                Home
-            </a>
-            <a href="Caracteristicas.html" class="hover">
-                Features
-            </a>
-            <div class="dropdown">
+        <div class="menu" role="menubar">
+            <a href="index.html" class="hover" role="menuitem">Home</a>
+            <a href="Caracteristicas.html" class="hover" role="menuitem">Features</a>
+            <div class="dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
                 <a href="javascript:void(0)" class="hover dropdown-toggle">Reserve Space</a>
-                <div class="dropdown-menu">
-                    <a href="RegisterReserva.html" class="hover">Lima</a>
-                    <a href="RegisterReserva.html" class="hover">Arequipa</a>
-                    <a href="RegisterReserva.html" class="hover">Cusco</a>
+                <div class="dropdown-menu" role="menu" aria-hidden="true">
+                    <a href="RegisterReserva.html" class="hover" role="menuitem">Lima</a>
+                    <a href="RegisterReserva.html" class="hover" role="menuitem">Arequipa</a>
+                    <a href="RegisterReserva.html" class="hover" role="menuitem">Cusco</a>
                 </div>
             </div>
-            <a href="#contact" class="hover">Contact Us</a>
+            <a href="#contact" class="hover" role="menuitem">Contact Us</a>
         </div>
 
         <div class="auth-buttons">
             <button class="login-button">
-                <a href="Login.html">Log In</a>
+                <a href="Login.html" aria-label="Log In">Log In</a>
             </button>
             <button class="register-button">
-                <a href="RegisterOptions.html">
-                    Register Account
-                </a>
+                <a href="RegisterOptions.html" aria-label="Register Account">Register Account</a>
             </button>
         </div>
-
     </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <div class="menu-content">
             <div class="grid">
-                <a href="" class="hover">
-                    Home
-                </a>
-                <a href="" class="hover">
-                    Features
-                </a>
-                <a href="" class="hover">
-                    Reserve Space
-                </a>
+                <a href="index.html" class="hover" role="menuitem">Home</a>
+                <a href="Caracteristicas.html" class="hover" role="menuitem">Features</a>
+                <a href="javascript:void(0)" class="hover" role="menuitem">Reserve Space</a>
                 <div class="auth-buttons-mobile">
                     <button class="login-button-mobile">
-                        <a href="">
-                            Log In
-                        </a>
+                        <a href="Login.html" aria-label="Log In">Log In</a>
                     </button>
                     <button class="register-button-mobile">
-                        <a href="">
-                            Sign Up
-                        </a>
+                        <a href="RegisterOptions.html" aria-label="Sign Up">Sign Up</a>
                     </button>
                 </div>
             </div>
@@ -109,126 +88,124 @@
     </div>
 </section>
 
+
 <section class="locations-section">
-    <h1 class="font-extrabold">
+    <h1 class="font-extrabold" aria-label="Who are we?">
         Who are we?
     </h1>
 
-    <div class="locations-grid">
+    <div class="locations-grid" aria-label="Team members">
         <div>
             <img src="img/Diego.jpg" alt="Diego Soto" class="Diego">
-            <p class="location-text">
+            <p class="location-text" aria-label="Diego Ulises Soto Quispe">
                 Diego Ulises Soto Quispe
             </p>
-            <p class="location-description text-center text-lg mt-1">
+            <p class="location-description text-center text-lg mt-1" aria-label="About Diego Soto">
                 I am a 5th-cycle student in the Software Engineering program. I am responsible in the tasks assigned to me and punctual with deadlines. Outside of programming, I enjoy playing basketball, going for walks, playing video games, and riding my bike.
             </p>
         </div>
         <div>
             <img src="img/Diego_C.jpg" alt="Diego Cacho" class="location-image">
-            <p class="location-text">
+            <p class="location-text" aria-label="Diego Alonso Cacho Seminario">
                 Diego Alonso Cacho Seminario
             </p>
-            <p class="location-description">
+            <p class="location-description" aria-label="About Diego Cacho">
                 My name is Diego Cacho, and I am 19 years old. I am currently in the 5th cycle of my Software Engineering career at UPC. I consider myself a calm and diligent person; I try to complete my tasks and assignments as soon as possible to avoid future setbacks, especially for time-consuming activities. As a team member, I will seek to help my colleagues whenever they need it, and I will also make my submissions as early as possible.
             </p>
         </div>
         <div>
             <img src="img/Omar.jpeg" alt="Omar Rivera" class="location-image">
-            <p class="location-text">
+            <p class="location-text" aria-label="Omar Harold Rivera Ticllacuri">
                 Omar Harold Rivera Ticllacuri
             </p>
-            <p class="location-description text-center text-lg mt-1">
+            <p class="location-description text-center text-lg mt-1" aria-label="About Omar Rivera">
                 I am a Software Engineering student, 19 years old, currently in the fifth cycle of my career. I am a disciplined and responsible person when it comes to developing software and entertainment projects. I have experience in entertainment software development. Therefore, I will support the group in every possible way to adequately develop the work and proposal assigned to us.
             </p>
         </div>
     </div>
 </section>
 <section class="locations-section">
-    <div class="locations-grid">
+    <div class="locations-grid" aria-label="Additional Team members">
         <div>
-            <img src="img/Samuel.jpeg" alt="Lima" class="location-image">
-            <p class="location-text">
+            <img src="img/Samuel.jpeg" alt="Samuel Elias Molina Asencios" class="location-image">
+            <p class="location-text" aria-label="Samuel Elias Molina Asencios">
                 Samuel Elias Molina Asencios
             </p>
-            <p class="location-description text-center text-lg mt-1">
+            <p class="location-description text-center text-lg mt-1" aria-label="About Samuel Molina">
                 I am a 7th-cycle student in the Software Engineering program. I am currently part of a development team, taking on the role of Software Analyst Developer. I really enjoy art and sports. In my free time, I play the piano or go swimming; there's nothing better than swimming.
             </p>
         </div>
         <div>
-            <img src="img/Rodrigo.png" alt="Arequipa" class="location-image">
-            <p class="location-text">
+            <img src="img/Rodrigo.png" alt="Rodrigo Liberato Saldaña" class="location-image">
+            <p class="location-text" aria-label="Rodrigo Liberato Saldaña">
                 Rodrigo Liberato Saldaña
             </p>
-            <p class="location-description">
+            <p class="location-description" aria-label="About Rodrigo Saldaña">
                 I am a 6th-cycle student in the Software Engineering program. I am a person who values effort and tries to support in every possible way. Responsibility and honesty are some of my qualities, and they will be helpful to ensure that the work is done as well as possible.
             </p>
         </div>
     </div>
 </section>
 
-
-<section class="promotions-section">
-    <h2>Featured Promotions</h2>
-    <div class="promotion-grid">
-        <div class="promotion" id="promotion-lima">
-            <img src="img/Lima_Descuento.jpg" alt="Promotion in Lima" class="promotion-img">
+<section class="promotions-section" aria-labelledby="promotionsTitle">
+    <h2 id="promotionsTitle">Featured Promotions</h2>
+    <div class="promotion-grid" role="grid">
+        <div class="promotion" id="promotion-lima" role="gridcell">
+            <img src="img/Lima_Descuento.jpg" alt="Promotion in Lima" class="promotion-img" aria-describedby="promoLimaDesc">
             <h3>Promotion in Lima</h3>
-            <p>20% discount on your first reservation!</p>
+            <p id="promoLimaDesc">20% discount on your first reservation!</p>
         </div>
-        <div class="promotion" id="promotion-arequipa">
-            <img src="img/Arequipa_Descuento.jpg" alt="Promotion in Arequipa" class="promotion-img">
+        <div class="promotion" id="promotion-arequipa" role="gridcell">
+            <img src="img/Arequipa_Descuento.jpg" alt="Promotion in Arequipa" class="promotion-img" aria-describedby="promoArequipaDesc">
             <h3>Promotion in Arequipa</h3>
-            <p>Book now and get a 15% discount!</p>
+            <p id="promoArequipaDesc">Book now and get a 15% discount!</p>
         </div>
-        <div class="promotion" id="promotion-cusco">
-            <img src="img/Cuzco_Descuento.jpg" alt="Promotion in Cusco" class="promotion-img">
+        <div class="promotion" id="promotion-cusco" role="gridcell">
+            <img src="img/Cuzco_Descuento.jpg" alt="Promotion in Cusco" class="promotion-img" aria-describedby="promoCuscoDesc">
             <h3>Promotion in Cusco</h3>
-            <p>10% discount on all spaces!</p>
+            <p id="promoCuscoDesc">10% discount on all spaces!</p>
         </div>
     </div>
 </section>
-<section class="cta-section">
-    <img src="img/Estacionamientos.jpg" alt="cta-banner" class="cta-banner">
+<section class="cta-section" aria-label="Call to Action">
+    <img src="img/Estacionamientos.jpg" alt="Parking call to action banner" class="cta-banner" />
     <div class="cta-content">
-        <p class="cta-title">
+        <p class="cta-title" role="heading" aria-level="3">
             ARE YOU LOOKING FOR PARKING?<br>WE HELP YOU FIND IT
         </p>
         <p class="cta-subtitle">
             With PARKINGNOW, you can find and reserve your space in seconds.
         </p>
-        <button class="cta-button">
-            <a href="Login.html">
+        <button class="cta-button" aria-label="Get Started Now">
+            <a href="Login.html" aria-label="Get Started Now">
                 Get Started Now
             </a>
         </button>
     </div>
 </section>
 
-
-<section class="contact-section" id="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
+<section class="contact-section" id="contact" aria-labelledby="contactTitle">
+    <h2 id="contactTitle">Contact Us</h2>
+    <form class="contact-form" aria-label="Contact form" method="post" >
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
+            <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true">
         </div>
         <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Your email">
+            <input type="email" id="email" name="email" placeholder="Your email" required aria-required="true">
         </div>
         <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Write your message"></textarea>
+            <textarea id="message" name="message" placeholder="Write your message" required aria-required="true"></textarea>
         </div>
-        <button type="submit" class="submit-btn">Send Message</button>
+        <button type="submit" class="submit-btn" aria-label="Send Message">Send Message</button>
     </form>
 </section>
-
-<footer class="footer-section">
+<footer class="footer-section" aria-label="Footer">
     <div class="footer-content">
         <div class="footer-logo">
-            <img src="img/parkingnow.png" alt="PARKINGNOW" class="h-10">
+            <img src="img/parkingnow.png" alt="PARKINGNOW logo" class="h-10">
         </div>
         <div class="footer-menu">
             <a href="About.html" class="hover">About</a>
@@ -236,10 +213,11 @@
             <a href="About.html" class="hover">Contact</a>
         </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom" aria-label="Copyright Information">
         &copy; 2024 PARKINGNOW. All rights reserved.
     </div>
 </footer>
+
 
 
 </body>

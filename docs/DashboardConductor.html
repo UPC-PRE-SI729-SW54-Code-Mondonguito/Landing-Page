@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/DashboardConductor.css">
 </head>
 <body>
-<div class="container">
+<main class="container" role="main">
 
-    <div class="sidebar">
+    <nav class="sidebar" role="navigation" aria-label="Admin Navigation">
         <div class="logo">
-            <a href="index.html" class="login-link"><img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio"></a>
+            <a href="index.html" class="login-link" aria-label="Go to home page"><img src="img/parkingnow.png" alt="ParkingNow Logo" class="LogoInicio"></a>
             <h2>ParkingNow</h2>
         </div>
         <ul class="menu">
@@ -21,22 +21,22 @@
             <li><a href="DashboardConductor4.html" id="tracking-alarm-button">Vehicle Tracking and Alarms</a></li>
             <li><a href="DashboardConductor5.html">Settings</a></li>
             <li>
-                <a href="DashboardConductor6.html" class="notification-button">
+                <a href="DashboardConductor6.html" class="notification-button" aria-label="View notifications">
                     Notifications
-                    <span class="exclamation-icon">!</span>
+                    <span class="exclamation-icon" aria-hidden="true">!</span>
                 </a>
             </li>
             <li><a href="index.html">Log Out</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="main-content">
-        <div class="header">
+    <section class="main-content">
+        <header class="header" aria-label="User Profile">
             <div class="profile-picture">
-                <img src="img/Conductor.jpg" alt="User">
+                <img src="img/Conductor.jpg" alt="User Profile Picture">
             </div>
             <h1>Welcome...</h1>
-        </div>
+        </header>
 
         <div class="section">
             <h2>Would you like to make a reservation?</h2>
@@ -52,48 +52,47 @@
             </div>
         </div>
 
-        <div class="notification">
+        <div class="notification" aria-live="polite">
             <p>There is vacant space near your location</p>
         </div>
-        <div id="notificationChange" class="notification notification-change">
+        <div id="notificationChange" class="notification notification-change" aria-live="polite">
             <p>The time of a reservation has been changed. Check the details.</p>
         </div>
-        <div id="notificationCancel" class="notification notification-cancel">
+        <div id="notificationCancel" class="notification notification-cancel" aria-live="polite">
             <p>Your reservation has been canceled due to unavailability. Consider these alternative options:</p>
             <ul>
                 <li>Reserve at another nearby location.</li>
                 <li>Select another date and time.</li>
             </ul>
         </div>
+    </section>
+</main>
 
-    </div>
-</div>
-
-<div id="tracking-alarm-section" class="section hidden">
-    <h2>Concurrent Places</h2>
-    <div class="content-boxzzz">
+<div id="tracking-alarm-section" class="section hidden" aria-labelledby="tracking-alarm-heading">
+    <h2 id="tracking-alarm-heading">Concurrent Places</h2>
+    <div class="content-boxzzz" role="region" aria-label="Parking Locations">
         <img src="img/PlayaChiringuitoChatarra.jpg" alt="Chiringuito Chatarra Beach" class="content-image">
         <p>Chiringuito Chatarra Beach: A popular place to spend the day. Ample space and good security.
-            <button class="security-check-button" data-parking="Chiringuito Chatarra Beach">Check Security</button></p>
+            <button class="security-check-button" data-parking="Chiringuito Chatarra Beach" aria-label="Check security at Chiringuito Chatarra Beach">Check Security</button></p>
     </div>
-    <div class="content-boxzzz">
+    <div class="content-boxzzz" role="region" aria-label="Parking Locations">
         <img src="img/EstacionamientoP.jpg" alt="Broken Tiles Beach" class="content-image">
         <p>Broken Tiles Beach: Ideal for recreational activities with quality facilities.
-            <button class="security-check-button" data-parking="Broken Tiles Beach">Check Security</button></p>
+            <button class="security-check-button" data-parking="Broken Tiles Beach" aria-label="Check security at Broken Tiles Beach">Check Security</button></p>
     </div>
-    <div class="content-boxzzz">
+    <div class="content-boxzzz" role="region" aria-label="Parking Locations">
         <img src="img/PlayaArboledaAceitosa.jpeg" alt="Olive Grove Beach" class="content-image">
         <p>Olive Grove Beach: Known for its natural surroundings and tranquility.
-            <button class="security-check-button" data-parking="Olive Grove Beach">Check Security</button></p>
+            <button class="security-check-button" data-parking="Olive Grove Beach" aria-label="Check security at Olive Grove Beach">Check Security</button></p>
     </div>
-    <div class="content-boxzzz">
+    <div class="content-boxzzz" role="region" aria-label="Parking Locations">
         <img src="img/PlayaBalsaBotin.jpg" alt="Botín Beach" class="content-image">
         <p>Botín Beach: Popular among locals, with good access and services.
-            <button class="security-check-button" data-parking="Botín Beach">Check Security</button></p>
+            <button class="security-check-button" data-parking="Botín Beach" aria-label="Check security at Botín Beach">Check Security</button></p>
     </div>
 </div>
 
-<div id="securityAlert" class="security-alert">
+<div id="securityAlert" class="security-alert" role="alert">
     <p>Security Alert: A problem has been detected in the selected parking area.</p>
 </div>
 

@@ -9,12 +9,12 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" role="main" aria-labelledby="confirmation-title">
 
-    <div class="confirmation-box">
-        <h1 class="confirmation-title">We have sent an email <br> to verify your identity</h1>
-        <p class="confirmation-message"></p>
-        <a href="index.html" class="home-button">Return to Home</a>
+    <div class="confirmation-box" aria-live="polite">
+        <h1 class="confirmation-title" id="confirmation-title">We have sent an email <br> to verify your identity</h1>
+        <p class="confirmation-message" aria-hidden="true">Please check your inbox for further instructions.</p>
+        <a href="index.html" class="home-button" role="button">Return to Home</a>
     </div>
 </div>
 

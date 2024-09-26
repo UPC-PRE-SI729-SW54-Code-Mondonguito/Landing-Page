@@ -9,17 +9,19 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" role="main" aria-labelledby="confirmation-title">
 
-    <div class="feedback-confirmation-box">
-        <h1 class="feedback-title">Your reservation has been canceled</h1>
+    <div class="feedback-confirmation-box" aria-live="polite">
+        <h1 class="feedback-title" id="confirmation-title">Your Reservation Has Been Canceled</h1>
+        <p class="feedback-message">We're sorry to see you go. If you'd like to make another reservation, you can do so using the button below.</p>
         <div class="button-group">
-            <a href="RegisterReserva.html" class="reserve-again-button">Reserve Again</a>
-            <a href="index.html" class="home-button">Return to Home</a>
+            <a href="RegisterReserva.html" class="reserve-again-button" role="button">Reserve Again</a>
+            <a href="index.html" class="home-button" role="button">Return to Home</a>
         </div>
     </div>
 </div>
 
 <p class="footer-text">© 2024 PARKINGNOW. All rights reserved.</p>
+
 </body>
 </html>

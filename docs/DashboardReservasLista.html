@@ -9,51 +9,66 @@
 <body>
 <div class="container">
 
-    <div class="sidebar">
-        <div class="logo">
-            <a href="index.html" class="login-link"><img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio"></a>
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+        <div class="logo" aria-label="ParkingNow Logo">
+            <a href="index.html" class="login-link" aria-label="Go to Home Page">
+                <img src="img/parkingnow.png" alt="ParkingNow Logo" class="LogoInicio">
+            </a>
             <h2>ParkingNow</h2>
         </div>
-        <ul class="menu">
-            <li><a href="DashboardConductor.html">Home</a></li>
-            <li><a href="RegisterReserva.html">Register Reservation</a></li>
-            <li><a href="About.html">Support</a></li>
-            <li><a href="DashboardConductor4.html" id="tracking-alarm-button">Vehicle Tracking and Alarms</a></li>
-            <li><a href="DashboardConductor5.html">Settings</a></li>
-        </ul>
-    </div>
+        <nav>
+            <ul class="menu" aria-label="Main Menu">
+                <li><a href="DashboardConductor.html" aria-label="Home">Home</a></li>
+                <li><a href="RegisterReserva.html" aria-label="Register Reservation">Register Reservation</a></li>
+                <li><a href="About.html" aria-label="Support">Support</a></li>
+                <li><a href="DashboardConductor4.html" id="tracking-alarm-button" aria-label="Vehicle Tracking and Alarms">Vehicle Tracking and Alarms</a></li>
+                <li><a href="DashboardConductor5.html" aria-label="Settings">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <div class="main-content">
-        <div class="header">
-            <div class="profile-picture">
-                <img src="img/Conductor.jpg" alt="User">
+    <main class="main-content" aria-label="Main Content Area">
+        <header class="header" aria-label="Welcome Header">
+            <div class="profile-picture" aria-label="User Profile Picture">
+                <img src="img/Conductor.jpg" alt="User Profile Picture">
             </div>
             <h1>Welcome...</h1>
-        </div>
+        </header>
 
         <div class="sections-container">
-            <div class="section">
-                <h2>Active Reservations</h2>
+            <section class="section" aria-labelledby="active-reservations-title">
+                <h2 id="active-reservations-title">Active Reservations</h2>
                 <div class="content-box">
-                    <div class="reservation">
-                        <p>Beach Chiringuito Chatarra <button class="favorite-button" data-parking="Beach Chiringuito Chatarra">Add to Favorites</button></p>
-                        <p>Beach Pisos Picados <button class="favorite-button" data-parking="Beach Pisos Picados">Add to Favorites</button></p>
-                        <p>Beach Arboleda Aceitosa <button class="favorite-button" data-parking="Beach Arboleda Aceitosa">Add to Favorites</button></p>
-                        <p>Beach Balsa Botín <button class="favorite-button" data-parking="Beach Balsa Botín">Add to Favorites</button></p>
-                        <div id="favoritelist"></div>
-                    </div>
+                    <ul class="reservation-list">
+                        <li>
+                            <span>Beach Chiringuito Chatarra</span>
+                            <button class="favorite-button" data-parking="Beach Chiringuito Chatarra" aria-label="Add Beach Chiringuito Chatarra to Favorites">Add to Favorites</button>
+                        </li>
+                        <li>
+                            <span>Beach Pisos Picados</span>
+                            <button class="favorite-button" data-parking="Beach Pisos Picados" aria-label="Add Beach Pisos Picados to Favorites">Add to Favorites</button>
+                        </li>
+                        <li>
+                            <span>Beach Arboleda Aceitosa</span>
+                            <button class="favorite-button" data-parking="Beach Arboleda Aceitosa" aria-label="Add Beach Arboleda Aceitosa to Favorites">Add to Favorites</button>
+                        </li>
+                        <li>
+                            <span>Beach Balsa Botín</span>
+                            <button class="favorite-button" data-parking="Beach Balsa Botín" aria-label="Add Beach Balsa Botín to Favorites">Add to Favorites</button>
+                        </li>
+                    </ul>
+                    <div id="favoritelist" aria-live="polite"></div>
                 </div>
-            </div>
+            </section>
 
-            <div class="section">
-                <h2>My Favorites</h2>
+            <section class="section" aria-labelledby="my-favorites-title">
+                <h2 id="my-favorites-title">My Favorites</h2>
                 <div class="content-box" id="favorite-list">
                     <p>You have no favorite parking spaces yet.</p>
                 </div>
-            </div>
-
+            </section>
         </div>
-    </div>
+    </main>
 </div>
 
 <script src="js/DashboardReservaLista.js"></script>

@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="css/BusquedaDeReserva.css">
 </head>
 <body>
+<h1 id="main-title" class="visually-hidden">Establishment Reservation</h1>
+<div class="container" role="main" aria-labelledby="main-title">
 
-<div class="container">
 
     <div class="info-box">
         <div class="header">
-            <div class="image-placeholder"> <div class="photo-placeholder"><img src="img/foto1.png" alt="photo1" class="foto2"></div></div>
+            <div class="image-placeholder">
+                <div class="photo-placeholder">
+                    <img src="img/foto1.png" alt="Waterfront Parking" class="foto2">
+                </div>
+            </div>
             <div>
                 <h2>Waterfront Parking</h2>
                 <p>Reviews</p>
@@ -22,25 +27,35 @@
 
         <div class="description">
             <h3>Description</h3>
-            <textarea placeholder="Places you won’t forget, visiting these places is a wonderful experience" disabled></textarea>
+            <textarea placeholder="Places you won’t forget; visiting these places is a wonderful experience" disabled></textarea>
         </div>
 
         <div class="photos">
             <h3>Photos</h3>
             <div class="photo-gallery">
-                <div class="photo-placeholder"><img src="img/foto1.png" alt="photo1" class="foto"></div>
-                <div class="photo-placeholder"><img src="img/foto2.png" alt="photo2" class="foto"></div>
-                <div class="photo-placeholder"><img src="img/foto3.png" alt="photo3" class="foto"></div>
+                <div class="photo-placeholder">
+                    <img src="img/foto1.png" alt="Waterfront Parking Photo 1" class="foto">
+                </div>
+                <div class="photo-placeholder">
+                    <img src="img/foto2.png" alt="Waterfront Parking Photo 2" class="foto">
+                </div>
+                <div class="photo-placeholder">
+                    <img src="img/foto3.png" alt="Waterfront Parking Photo 3" class="foto">
+                </div>
             </div>
         </div>
 
         <div class="buttons">
-            <a href="OpinionesLista.html"><button class="opinion-button">Leave a review</button></a>
-            <a href="RegisterReserva.html"><button class="reserve-button">Reserve</button></a>
+            <a href="OpinionesLista.html" aria-label="Leave a review">
+                <button class="opinion-button">Leave a review</button>
+            </a>
+            <a href="RegisterReserva.html" aria-label="Reserve parking space">
+                <button class="reserve-button">Reserve</button>
+            </a>
         </div>
     </div>
 
-    <div class="map-container" id="map">
+    <div class="map-container" id="map" aria-label="Map showing location of Waterfront Parking">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15601.613583549472!2d-77.04137075494285!3d-12.152916201453062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7ce6a1e9c11%3A0x15b8c4694efc891a!2sEstacionamiento%20de%20la%20playa%20agua%20dulce!5e0!3m2!1ses-419!2spe!4v1725166844512!5m2!1ses-419!2spe" width="810" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>

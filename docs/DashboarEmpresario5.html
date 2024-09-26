@@ -9,52 +9,67 @@
 <body>
 <div class="container">
 
-    <div class="sidebar">
-        <div class="logo">
-            <a href="index.html" class="login-link"><img src="img/parkingnow.png" alt="ParkingNow" class="LogoInicio"></a>
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+        <div class="logo" aria-label="ParkingNow Logo">
+            <a href="index.html" class="login-link" aria-label="Go to Home Page">
+                <img src="img/parkingnow.png" alt="ParkingNow Logo" class="LogoInicio">
+            </a>
             <h2>ParkingNow</h2>
         </div>
-        <ul class="menu">
-            <li><a href="DashboardEmpresario3.html">Register Locations</a></li>
-            <li><a href="DashboarEmpresario5.html">Reservations</a></li>
-            <li><a href="DashboardEmpresario2.html">Monitoring and Alarms</a></li>
-            <li><a href="DashboardEmpresario4.html">Settings</a></li>
-            <li><a href="DashboardEmpresarioRegistroLocales2.html">Notifications</a></li>
-            <li><a href="index.html">Log Out</a></li>
-        </ul>
-    </div>
+        <nav>
+            <ul class="menu" aria-label="Admin Menu">
+                <li><a href="DashboardEmpresario3.html" aria-label="Register Locations">Register Locations</a></li>
+                <li><a href="DashboarEmpresario5.html" aria-label="Reservations">Reservations</a></li>
+                <li><a href="DashboardEmpresario2.html" aria-label="Monitoring and Alarms">Monitoring and Alarms</a></li>
+                <li><a href="DashboardEmpresario4.html" aria-label="Settings">Settings</a></li>
+                <li><a href="DashboardEmpresarioRegistroLocales2.html" aria-label="Notifications">Notifications</a></li>
+                <li><a href="index.html" aria-label="Log Out">Log Out</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <div class="main-content">
-        <div class="header">
-            <div class="profile-picture">
-                <img src="img/Conductor.jpg" alt="User">
+    <main class="main-content" aria-label="Main Content Area">
+        <header class="header" aria-label="Welcome Header">
+            <div class="profile-picture" aria-label="User Profile Picture">
+                <img src="img/Conductor.jpg" alt="User Profile Picture">
             </div>
             <h1>Welcome...</h1>
-        </div>
+        </header>
 
         <div class="sections-container">
-            <div class="section">
-                <h2>Active Reservations</h2>
+            <section class="section" aria-labelledby="active-reservations-title">
+                <h2 id="active-reservations-title">Active Reservations</h2>
                 <div class="content-box">
-                    <div class="reservation">
-                        <p>Driver Diego <button class="favorite-button" data-parking="Beach Chiringuito Chatarra">Add to Favorites</button></p>
-                        <p>Driver Omar <button class="favorite-button" data-parking="Beach Pisos Picados">Add to Favorites</button></p>
-                        <p>Driver Rodrigo <button class="favorite-button" data-parking="Beach Arboleda Aceitosa">Add to Favorites</button></p>
-                        <p>Driver Samuel <button class="favorite-button" data-parking="Beach Balsa Botín">Add to Favorites</button></p>
-                        <div id="favoritelist"></div>
-                    </div>
+                    <ul class="reservation-list">
+                        <li>
+                            <span>Driver Diego</span>
+                            <button class="favorite-button" data-parking="Beach Chiringuito Chatarra" aria-label="Add Driver Diego to Favorites">Add to Favorites</button>
+                        </li>
+                        <li>
+                            <span>Driver Omar</span>
+                            <button class="favorite-button" data-parking="Beach Pisos Picados" aria-label="Add Driver Omar to Favorites">Add to Favorites</button>
+                        </li>
+                        <li>
+                            <span>Driver Rodrigo</span>
+                            <button class="favorite-button" data-parking="Beach Arboleda Aceitosa" aria-label="Add Driver Rodrigo to Favorites">Add to Favorites</button>
+                        </li>
+                        <li>
+                            <span>Driver Samuel</span>
+                            <button class="favorite-button" data-parking="Beach Balsa Botín" aria-label="Add Driver Samuel to Favorites">Add to Favorites</button>
+                        </li>
+                    </ul>
+                    <div id="favoritelist" aria-live="polite"></div>
                 </div>
-            </div>
+            </section>
 
-            <div class="section">
-                <h2>My Favorites</h2>
+            <section class="section" aria-labelledby="my-favorites-title">
+                <h2 id="my-favorites-title">My Favorites</h2>
                 <div class="content-box" id="favorite-list">
                     <p>You have no favorite parking spaces yet.</p>
                 </div>
-            </div>
-
+            </section>
         </div>
-    </div>
+    </main>
 </div>
 
 <script src="js/DashboardReservaLista.js"></script>
