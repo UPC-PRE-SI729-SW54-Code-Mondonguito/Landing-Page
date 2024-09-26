@@ -641,7 +641,7 @@ img {
 .content h1 {
     color: white;
     font-family: "Kalam",serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 1.2;
 }
 
@@ -783,6 +783,231 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+.register_p{
+    font-family: "Tinos", serif;
+    opacity: 1;
+    background-size: 32px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 89vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #363c48, #5f687c);
+
+}
+.container_r {
+    background-color: #1c1c1c;
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    max-width: 1400px;
+    height: auto;
+}
+.option {
+    text-align: center;
+    padding: 0;
+    flex: 1;
+    margin: 10px 30px;
+}
+
+.Choose1{
+    background-color: #cff1ff;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 20px;
+}
+.Choose1:hover{
+    background-color: #9fd7ff;
+    color: white;
+    border-radius: 30px;
+
+}
+
+.Choose2{
+    background-color: #fffbcf;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 20px;
+    height: 120%;
+
+}
+.Choose2:hover{
+    background-color: #ffef9f;
+    color: white;
+    border-radius: 30px;
+}
+
+.LogoInicio{
+    top: 5%;
+    left: 4%;
+    position: absolute;
+    width: 8%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.option h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.option p {
+    font-size: 0.9em;
+    color: #fff;
+    line-height: 1.5em;
+}
+.Register{
+    font-family: "Kalam", cursive;
+}
+
+.register-box {
+    display: flex;
+    width: 100%;
+}
+
+.register-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+}
+
+.register-form h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.register-form h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.register-form p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.register-form a {
+    color: #5e3fd6;
+    text-decoration: none;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.CircleImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.option p {
+    font-size: 0.9em;
+    color: #8f8f8f;
+    line-height: 1.5em;
+    transition: 0.3s;
+}
+.LogoInicio{
+    top: 5%;
+    left: 4%;
+    position: absolute;
+    width: 8%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.option p:hover {
+    color: #2d2d2d;
+    line-height: 1.5em;
+}
+
+.option h2{
+    font-size: 1.5rem;
+    font-family: "Kalam", serif;
+    transition: 0.3s;
+    color: #8f8f8f;
+
+}
+.option h2:hover{
+    font-size: 1.7rem;
+    color: #8f8f8f;
+
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    align-items: center;
+    margin-right: 5px;
+}
+.remember{
+    padding-right: 50%;
+}
+.forgot-password {
+    font-size: 0.8em;
+    color: #5e3fd6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.forgot-password:hover {
+    color: #3d288d;
+}
+
+
+.with{
+    text-align: center;
+}
+
+
+
+.registerImagen {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 10px 10px 0;
+}
+
 
 @media (max-width: 480px) {
     body{

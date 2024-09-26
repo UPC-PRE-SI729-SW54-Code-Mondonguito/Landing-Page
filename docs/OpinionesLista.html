@@ -15,7 +15,7 @@
     <section id="reviewsSection" class="hidden">
         <h2>Opiniones</h2>
         <ul id="reviewsList">
-
+            <!-- Aquí se agregarán las opiniones dinámicamente -->
         </ul>
     </section>
 
@@ -24,8 +24,7 @@
         <div class="feedback-container">
             <div class="feedback-image">
                 <img src="img/Conductor.jpg" alt="Imagen de Opinión">
-                <!--  <img src="img/parkingnow.png" alt="Imagen de Opinión">  para agregar mas podriamos poner denuevo eso-->
-
+                <!-- Otra imagen se podría agregar más adelante si se desea -->
             </div>
         </div>
         <form id="feedbackForm">
@@ -34,7 +33,7 @@
 
             <label for="rating"><br>Calificación:</label>
             <div class="star-widget">
-                <input type="radio" name="rate" id="rate-5" value="5">
+                <input type="radio" name="rate" id="rate-5" value="5" required>
                 <label for="rate-5" title="5 stars">&#9733;</label>
                 <input type="radio" name="rate" id="rate-4" value="4">
                 <label for="rate-4" title="4 stars">&#9733;</label>
@@ -61,8 +60,6 @@
             </div>
         </form>
     </section>
-
-
 </main>
 
 <script src="js/OpinionesLista.js"></script>
